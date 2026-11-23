@@ -1,20 +1,13 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-  <head><script>
-(function(){var m={};function mk(){return {getItem:function(k){return k in m?m[k]:null},setItem:function(k,v){m[k]=String(v)},removeItem:function(k){delete m[k]},clear:function(){m={}},key:function(i){return Object.keys(m)[i]||null},get length(){return Object.keys(m).length}}}
-try{window.localStorage.getItem('x')}catch(e){try{Object.defineProperty(window,'localStorage',{value:mk()});Object.defineProperty(window,'sessionStorage',{value:mk()})}catch(e2){}}
-var q=new URLSearchParams(location.search).get('p')||'/';history.replaceState(null,'',q);
-function rep(){try{parent.postMessage({tp:location.pathname+location.search+location.hash},'*')}catch(e){}}
-['pushState','replaceState'].forEach(function(n){var o=history[n];history[n]=function(){var r=o.apply(this,arguments);rep();return r}});
-addEventListener('popstate',rep);setTimeout(rep,300);})();
-</script>
+  <head><script src="./preview-data.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tarzi</title>
-    <link rel="manifest" href="/tp-7f3k9/app/manifest.webmanifest" />
+    <link rel="manifest" href="./manifest.webmanifest" />
     <meta name="theme-color" content="#1e4030" />
-    <script type="module" crossorigin src="/tp-7f3k9/app/assets/index-S5Vx7wjk.js"></script>
-    <link rel="stylesheet" crossorigin href="/tp-7f3k9/app/assets/index-B26Qrk9E.css">
+    <script type="module" crossorigin src="./assets/index-CEXSHWqY.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-QVo-Beas.css">
   </head>
   <body>
     <div id="root"></div>
