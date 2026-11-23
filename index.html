@@ -14,7 +14,7 @@
     const frame = document.getElementById('preview-app');
     const app = new URL('app/index.html', location.href);
     app.searchParams.set('p', params.get('p') || '/');
-    if (params.get('role') === 'staff') app.searchParams.set('role', 'staff');
+    if (params.get('role') === 'staff' || params.get('entry') === 'staff') app.searchParams.set('role', 'staff');
     app.searchParams.set('v', params.get('v') || '962');
     app.searchParams.set('t', String(Date.now()));
     frame.src = app.href;
